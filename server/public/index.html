@@ -16,23 +16,23 @@
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root" class="root">
-        <button onclick="jumpback()" class="pauseBtn">
+        <button onclick="jumpback()" class="customBtn">
             10s <<
         </button>
         
-        <button onclick="togglePauseRequest()" class="pauseBtn">
+        <button onclick="togglePauseRequest()" class="customBtn">
             start/pause
         </button>
         
-        <button onclick="jumpahead()" class="pauseBtn">
+        <button onclick="jumpahead()" class="customBtn">
             >> 10s
         </button>
 
-        <button onclick="nextepisode()" class="pauseBtn">
+        <button onclick="nextepisode()" class="customBtn">
             nextepisode
         </button>
 
-        <button onclick="skipcredits()" class="pauseBtn">
+        <button onclick="skipcredits()" class="customBtn">
             skipcredits
         </button>        
     </div>
@@ -42,11 +42,13 @@
             text-align: center;
         }
 
-        .pauseBtn {
+        .customBtn {
             display: inline-block;
             margin-top: 3em;
             margin: auto;
             padding: 30px;
+            border-radius: 2000px;
+            outline: none;
         }
     </style>
 
